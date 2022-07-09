@@ -213,4 +213,71 @@ switch (permissao){
 }
 
 // Lacos de repticao - No Javascript temos 5 tipos de loopings
+// 1.For 
+// 2.While 
+// 3.Do... While
+// 4.for...in
+// 5.for...of
+
+// Incremental
+for(let i = 0;i < 5; i++){
+    if(i % 2 !== 0){ //Operador modulos
+        3 % 2
+        console.log(i);
+    }
+}
+
+// Descremental
+for(let i = 0; i >= 5; i--){
+    if(i % 2 !== 0){ //Operador modulos
+        3 % 2
+        console.log(i);
+    }
+}
+
+
+//While loop
+
+let i = 5;
+while(i > 1){
+    if(i % 2 !== 0){ //Operador modulos
+        3 % 2
+        console.log(i);
+    }
+    i--;
+}
+
+//Do While
+
+let b = 0;
+do{
+    console.log('Digitando...', b);
+    i++;
+} while(b < 10)
+
+//For in
+
+const pessoa4 = {
+    nome2: 'Jhonathas',
+    idade: 18
+};
+//Key-value - Trabalhamos com indice
+for(let chave in pessoa4){
+    console.log(chave, pessoa['nome']); //Nome2: Jhonathas, Idade: Jhonthas
+}
+
+
+const cores = ['Vermlho', 'Azul', 'Verde'];
+
+for(let indice in cores){
+    console.log(indice,cores[indice]);
+}
+
+//For of  --- - -- --Serve para Arrays
+
+for(let cor of cores){
+    console.log(cor); //Nao demonstra os indices
+}
+
+
 
